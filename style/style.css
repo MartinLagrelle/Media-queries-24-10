@@ -1,0 +1,57 @@
+.menuBurger{
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+.bgHeader{
+    background-image: url("../img/bg_header.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* Format téléphone */
+@media screen and (max-width: 400px){
+    h1{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+}
+
+/* Format tablette */
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .bgHeader{
+        background-image: url("../img/bg_header.jpg"); 
+    }  
+    ul{
+        display: none;
+    }
+    h1{
+        display: none;
+    }
+}
+
+/* Format ordinateur */
+@media screen and (min-width: 1001px){
+    .menuBurger{
+        display: none;
+    }
+    .bgHeader{
+        background-image: url("../img/bg_footer.jpg");
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    h1{
+        display: none;
+    }
+}
